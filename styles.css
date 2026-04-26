@@ -74,7 +74,7 @@ nav {
 .section { padding: 40px 24px; }
 .section-inner { max-width: 1060px; margin: 0 auto; }
 .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); margin-bottom: 0; }
-.section-title { margin-top: 0px; font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--deep); line-height: 1.2; margin-bottom: 20px; letter-spacing: -0.02em; }
+.section-title { margin-top: 0px; font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--deep); line-height: 0.8; margin-bottom: 12px; letter-spacing: -0.02em; }
 .section-body { font-size: 1rem; line-height: 1.75; color: #3a3a3a; max-width: 680px; }
 
 .what-btm { background: var(--soft-bg); }
