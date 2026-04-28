@@ -190,3 +190,4 @@ footer a { color: var(--sky); text-decoration: none; }
   .feature-cards { grid-template-columns: 1fr; }
   .res-list { grid-template-columns: 1fr; }
 }
+a.pill { text-decoration: none; color: inherit; }
