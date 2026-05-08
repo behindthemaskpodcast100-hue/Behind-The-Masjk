@@ -191,3 +191,14 @@ footer a { color: var(--sky); text-decoration: none; }
   .res-list { grid-template-columns: 1fr; }
 }
 a.pill { text-decoration: none; color: inherit; }
+.episode-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.episode-card a div,
+.episode-card a p {
+  pointer-events: none;
+}
