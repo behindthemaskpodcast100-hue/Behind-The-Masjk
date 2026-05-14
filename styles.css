@@ -181,6 +181,11 @@ footer { background: var(--black); color: rgba(255,255,255,0.7); padding: 48px 2
 footer .f-logo img { height: 56px; width: auto; margin-bottom: 12px; }
 footer p { font-size: 0.85rem; margin-top: 4px; }
 footer a { color: var(--sky); text-decoration: none; }
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--navy); /* or whatever dark color it is */
 
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
