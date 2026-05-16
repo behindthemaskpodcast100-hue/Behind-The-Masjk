@@ -78,7 +78,7 @@ nav {
 .section-body { font-size: 1rem; line-height: 1.75; color: #3a3a3a; max-width: 680px; }
 
 .what-btm { background: var(--soft-bg); }
-.what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center; margin-top: 0px; }
+.what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; margin-top: 0px; }
 .pill-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .pill { background: rgba(73,147,212,0.12); color: var(--deep); border: 1px solid rgba(73,147,212,0.25); padding: 7px 16px; border-radius: 50px; font-size: 0.84rem; font-weight: 500; }
 .feature-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
