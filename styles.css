@@ -57,9 +57,9 @@ nav {
 
 .hero-content { position: relative; z-index:1; max-width: 800px; }
 .hero-badge { display: inline-block; background: rgba(73,147,212,0.15); color: var(--deep); border: 1px solid rgba(73,147,212,0.3); border-radius: 50px; padding: 6px 18px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
-.hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; color: var(--deep); margin-bottom: 28px; letter-spacing: -0.02em; }
+.hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.15; color: var(--deep); margin-bottom: 16px; letter-spacing: -0.02em; }
 .hero h1 em { font-style: italic; color: var(--mid); }
-.hero-sub { font-size: 1.05rem; color: #3a3a3a; line-height: 1.7; max-width: 640px; margin: 0 auto 44px; }
+.hero-sub { font-size: 1.05rem; color: #3a3a3a; line-height: 1.7; max-width: 640px; margin: 0 auto 24px; }
 .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 .btn-primary { background: var(--deep); color: var(--white); padding: 14px 34px; border: none; border-radius: 50px; font-size: 0.92rem; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; text-decoration: none; display: inline-block; box-shadow: 0 4px 18px rgba(34,75,137,0.25); }
@@ -71,10 +71,10 @@ nav {
 .btn-white { background: var(--white); color: var(--deep); padding: 14px 34px; border: none; border-radius: 50px; font-size: 0.92rem; font-weight: 700; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: all 0.2s; text-decoration: none; display: inline-block; }
 .btn-white:hover { background: var(--sky); transform: translateY(-2px); }
 
-.section { padding: 40px 24px; }
+.section { padding: 48px 24px; }
 .section-inner { max-width: 1060px; margin: 0 auto; }
 .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); margin-bottom: 0; }
-.section-title { margin-top: 0px; font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--deep); line-height: 0.8; margin-bottom: 12px; letter-spacing: -0.02em; }
+.section-title { margin-top: 0px; font-family: 'DM Serif Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--deep); line-height: 1.1; margin-bottom: 8px; letter-spacing: -0.02em; }
 .section-body { font-size: 1rem; line-height: 1.75; color: #3a3a3a; max-width: 680px; }
 
 .what-btm { background: var(--soft-bg); }
