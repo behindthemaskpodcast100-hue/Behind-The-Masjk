@@ -119,50 +119,8 @@
     .recap-desc { padding: 20px 20px; }
     .recap-slides { grid-template-columns: 1fr 1fr; }
   }
-  
-  .lightbox-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.lightbox-overlay.active { display: flex; }
-.lightbox-overlay img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 12px;
-  object-fit: contain;
-}
-.lightbox-close {
-  position: fixed;
-  top: 20px;
-  right: 28px;
-  color: white;
-  font-size: 2.5rem;
-  cursor: pointer;
-  font-weight: 300;
-  line-height: 1;
-}
 </style>
 </head>
-<div class="lightbox-overlay" id="lightbox" onclick="this.classList.remove('active')">
-  <span class="lightbox-close">×</span>
-  <img id="lightbox-img" src="" alt="">
-</div>
-
-<script>
-  document.querySelectorAll('.recap-slides img').forEach(img => {
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', () => {
-      document.getElementById('lightbox-img').src = img.src;
-      document.getElementById('lightbox').classList.add('active');
-    });
-  });
-</script>
 <body>
 
 <nav>
@@ -242,6 +200,7 @@
         <div class="recap-slides">
           <img src="BTM episode recaps - 18.png" alt="Episode 10 Recap Cover">
           <img src="BTM episode recaps - 19.png" alt="Episode 10 Carmy Specification">
+          <img src="1778975701640_image.png" alt="Episode 10 Carmy Detail">
           <img src="BTM episode recaps - 20.png" alt="Episode 10 Carmy Takeaways">
         </div>
       </div>
@@ -414,6 +373,45 @@
   <p style="margin-top:16px;"><a href="https://mail.google.com/mail/?view=cm&to=behindthemaskinitiative@gmail.com" target="_blank">behindthemaskinitiative@gmail.com</a></p>
   <p style="margin-top:20px; font-size:0.78rem; opacity:0.5;">© 2025 Behind The Mask. Built with 💙 by Kelly Hon.</p>
 </footer>
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.lightbox-overlay.active { display: flex; }
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 28px;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 1;
+}<div class="lightbox-overlay" id="lightbox" onclick="this.classList.remove('active')">
+  <span class="lightbox-close">×</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
 
+<script>
+  document.querySelectorAll('.recap-slides img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
