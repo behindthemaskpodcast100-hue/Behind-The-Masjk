@@ -25,7 +25,6 @@
     margin: 0 auto 36px;
     line-height: 1.7;
   }
-
   .episode-recap-block {
     background: var(--white);
     border: 1px solid var(--border);
@@ -34,7 +33,6 @@
     margin-bottom: 48px;
     box-shadow: 0 2px 16px rgba(34,75,137,0.07);
   }
-
   .recap-ep-header {
     background: linear-gradient(135deg, var(--deep), var(--mid));
     color: var(--white);
@@ -45,13 +43,11 @@
     flex-wrap: wrap;
     gap: 16px;
   }
-
   .recap-ep-header .ep-meta {
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
-
   .recap-ep-header .ep-date {
     font-size: 0.78rem;
     font-weight: 700;
@@ -59,13 +55,11 @@
     text-transform: uppercase;
     opacity: 0.75;
   }
-
   .recap-ep-header h2 {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     line-height: 1.3;
   }
-
   .recap-ep-header a {
     display: inline-flex;
     align-items: center;
@@ -82,7 +76,6 @@
     flex-shrink: 0;
   }
   .recap-ep-header a:hover { background: #17a349; }
-
   .recap-desc {
     padding: 24px 36px;
     font-size: 0.97rem;
@@ -90,13 +83,11 @@
     line-height: 1.75;
     border-bottom: 1px solid var(--border);
   }
-
   .recap-slides {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 0;
   }
-
   .recap-slides img {
     width: 100%;
     display: block;
@@ -105,8 +96,7 @@
     transition: opacity 0.2s;
     cursor: zoom-in;
   }
-  .recap-slides img:hover { opacity: 0.92; }
-
+  .recap-slides img:hover { opacity: 0.85; }
   .no-recap-note {
     padding: 32px 36px;
     text-align: center;
@@ -114,7 +104,35 @@
     font-size: 0.9rem;
     font-style: italic;
   }
-
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.88);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: zoom-out;
+  }
+  .lightbox-overlay.active { display: flex; }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    object-fit: contain;
+    cursor: default;
+  }
+  .lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 1;
+  }
   @media (max-width: 768px) {
     .recap-ep-header { flex-direction: column; align-items: flex-start; }
     .recap-desc { padding: 20px 20px; }
@@ -373,32 +391,7 @@
   <p style="margin-top:16px;"><a href="https://mail.google.com/mail/?view=cm&to=behindthemaskinitiative@gmail.com" target="_blank">behindthemaskinitiative@gmail.com</a></p>
   <p style="margin-top:20px; font-size:0.78rem; opacity:0.5;">© 2025 Behind The Mask. Built with 💙 by Kelly Hon.</p>
 </footer>
-.lightbox-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.85);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.lightbox-overlay.active { display: flex; cursor: zoom-out; }
-.lightbox-overlay img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 12px;
-  object-fit: contain;
-}
-.lightbox-close {
-  position: fixed;
-  top: 20px;
-  right: 28px;
-  color: white;
-  font-size: 2.5rem;
-  cursor: pointer;
-  font-weight: 300;
-  line-height: 1;}
+
 <div class="lightbox-overlay" id="lightbox" onclick="this.classList.remove('active')">
   <span class="lightbox-close">×</span>
   <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
@@ -413,5 +406,6 @@
     });
   });
 </script>
+
 </body>
 </html>
