@@ -383,7 +383,7 @@
   justify-content: center;
   padding: 20px;
 }
-.lightbox-overlay.active { display: flex; }
+.lightbox-overlay.active { display: flex; cursor: zoom-out; }
 .lightbox-overlay img {
   max-width: 90vw;
   max-height: 90vh;
@@ -398,16 +398,16 @@
   font-size: 2.5rem;
   cursor: pointer;
   font-weight: 300;
-  line-height: 1;
-}<div class="lightbox-overlay" id="lightbox" onclick="this.classList.remove('active')">
+  line-height: 1;}
+<div class="lightbox-overlay" id="lightbox" onclick="this.classList.remove('active')">
   <span class="lightbox-close">×</span>
-  <img id="lightbox-img" src="" alt="">
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
 </div>
 
 <script>
   document.querySelectorAll('.recap-slides img').forEach(img => {
-    img.style.cursor = 'zoom-in';
-    img.addEventListener('click', () => {
+    img.addEventListener('click', (e) => {
+      e.stopPropagation();
       document.getElementById('lightbox-img').src = img.src;
       document.getElementById('lightbox').classList.add('active');
     });
