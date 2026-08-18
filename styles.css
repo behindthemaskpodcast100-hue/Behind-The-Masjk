@@ -216,3 +216,10 @@ a.pill { text-decoration: none; color: inherit; }
   pointer-events: none;
 }
 .what-btm { background: var(--soft-bg); padding-top: 48px; } 
+
+.resource-main-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
