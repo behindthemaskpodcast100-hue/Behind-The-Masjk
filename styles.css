@@ -217,9 +217,14 @@ a.pill { text-decoration: none; color: inherit; }
 }
 .what-btm { background: var(--soft-bg); padding-top: 48px; } 
 
-.resource-main-cards {
+resource-main-cards {
   display: flex;
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+}
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
